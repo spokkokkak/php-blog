@@ -1,0 +1,116 @@
+<?php
+    require_once 'function/authen.php';
+    require_once './src/config/database.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>News</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="./src/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./src/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./src/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./src/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./src/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="./src/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+    <?php
+        require_once 'header.php';
+    ?>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="./src/assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Welcome to News<br></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="./src/assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="carousel-container">
+            <h2>At vero eos et accusamus</h2>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="./src/assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Temporibus autem quibusdam</h2>
+            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+            <a href="#featured-services" class="btn-get-started">Get Started</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section>
+    <!-- /Hero Section -->
+
+  </main>
+
+  
+  <?php
+      require_once 'footer.php';
+  ?>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="./src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./src/assets/vendor/php-email-form/validate.js"></script>
+  <script src="./src/assets/vendor/aos/aos.js"></script>
+  <script src="./src/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="./src/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./src/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="./src/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="./src/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./src/assets/js/main.js"></script>
+
+</body>
+
+</html>
